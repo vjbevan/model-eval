@@ -1,38 +1,18 @@
-# Sample Project
+# Model Evaluation Toolbox
 
-This is as an example on how teams can structure their project repositories. Thanks to Lindsey Heagey and Joachim Meyer for the template!
-
-## Files
-
-* `.gitignore`
-<br> Globally ignored files by `git` for the project.
-* `environment.yml`
-<br> `conda` environment description needed to run this project.
-* `README.md`
-<br> Description of the project (see suggested headings below)
-
-## Folders
-
-### `contributors`
-Each team member has it's own folder under contributors, where they can work on their contribution. Having a dedicated folder for each person helps to prevent conflicts when merging with the main branch.
-
-### `notebooks`
-Notebooks that are considered delivered results for the project should go in here.
-
-### `scripts`
-Helper utilities that are shared with the team
-
-# Recommended content for your README.md file:
-
-## Project Summary
-
-### Project Title
-
-Brief title describing the proposed work.
+Developing model evaluation notebooks allowing users to compare model estimates to SnowEx data and other datasets.
 
 ### Collaborators on this project
 
-List all participants on the project. Choose one team member to act as project lead, and identify one hackweek organizer as the data science lead.
+| Name  | Personal Goals / Can help with | Role
+| ------------- | ------------- | ------------- |
+| Melissa Wrzesien | | Project Lead |
+| Engela Sthapit | | |
+| Justin Pflug | | |
+| Sveta Stuefer | | |
+| Evi Ofekeze | | |
+| Cassia Cai | | |
+| Steven Pestana | | Project Facilitator/Helper |
 
 ### The problem
 
