@@ -6,7 +6,7 @@ Developing model evaluation notebooks allowing users to compare model estimates 
 
 | Name  | Personal Goals / Can help with | Role
 | ------------- | ------------- | ------------- |
-| [Valerie Veban](https://github.com/vjbevan) | | |
+| [Valerie Bevan](https://github.com/vjbevan) | | |
 | [Cassia Cai](https://github.com/CassiaCai) | | |
 | [Evi Ofekeze](https://github.com/eviofekeze) | | |
 | [Steven Pestana](https://github.com/spestana) | | Project Facilitator/Helper |
