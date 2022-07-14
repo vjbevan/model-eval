@@ -41,7 +41,6 @@ class access_SWESARR:
         folder_names = [name[62:] for name in folder_names]
         folder_date = [datetime.datetime.strptime(date[24:30] , '%y%m%d') for date in folder_names]
         return folder_names,folder_date
-    return
 
 def access_LIS(lon_range,lat_range,dates,variables,path,dx,dy,rsmpl):
     # access lis model outputs staged in a given location for a given box and set of dates
