@@ -77,19 +77,21 @@ class access_snowEx:
     def access_pointData(db_name,time_sel,time_buffer_dy,var_name,lat_range,lon_range):
         # open the session
         engine, session = get_db(db_name)
-        
+
         # do date filtering
         pointDates = session.query(PointData.date).distinct().all()
+
         time_sel_newForm = dateutil.parser.parse(time_sel)
         start_date = time_sel_newForm-datetime.timedelta(days=time_buffer_dy)
         start_date = start_date.date()
         end_date = time_sel_newForm+datetime.timedelta(days=time_buffer_dy)
         end_date = end_date.date()
+
         filtered_dates = date_between_prime_snowEx(start_date, end_date, pointDates)
-        
+
         # query the dataset and concatenate
         q = session.query(PointData).filter(PointData.type == var_name)   
-        
+
         data_day_list = []
         for dt_count,dtt in enumerate(filtered_dates):
             print(dtt)
@@ -103,7 +105,7 @@ class access_snowEx:
         df_concat_gpd = gpd.GeoDataFrame(df_concat)
 
         session.close()
-        
+
         # list of coordindate pairs
         coordinates = [[ lon_range[0], lat_range[0] ], [ lon_range[1], lat_range[0] ], [ lon_range[1], lat_range[1]], [lon_range[0], lat_range[1]]]        
         print(coordinates)
@@ -115,4 +117,4 @@ class access_snowEx:
         poly = gpd.GeoDataFrame(df, geometry='geometry', crs ="EPSG:4326").to_crs("EPSG:26912")
         df_clipped = gpd.clip(df_concat_gpd, poly)
         
-        return df_concat_gpd
+        return df_clipped
