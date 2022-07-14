@@ -40,7 +40,7 @@ def join_files(file_list):
             da = xr.concat([da, cda], "band")
             
         # extract frequency / polarization band
-        var_name = file.split('_')[5]
+        var_name = file.split('_')[12]
         var_name = var_name[0:2] + var_name[5:]
         var_names.append(var_name)
 
