@@ -21,11 +21,15 @@ Model evaluation can be a time consuming step consisting of downloading multiple
 
 ### Application Example
 
-List one specific application of this work.
+This toolbox demos how to do raster-to-raster and raster-to-grid comparisons for SWE and snow depth.
 
 ### Sample data
 
-Model data is from a NASA Land Information System simulation using Glen Liston's SnowModel. Model output is available for 4 water years from the NASA AWS bucket. Evaluation data is from the snowexSQL database.
+Model data is from a NASA Land Information System simulation using Glen Liston's SnowModel. Model output is available for 4 water years from the NASA AWS bucket, though we demonstrate a subsample of the full output. Evaluation data is from the snowexsql database. Data used from the SnowEx database include:
+* GPR SWE
+* Magnaprobe depth
+* Snow pit depth and SWE
+* Lidar depth and SWE
 
 ### Specific Questions
 

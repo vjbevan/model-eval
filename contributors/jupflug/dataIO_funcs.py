@@ -69,7 +69,6 @@ def access_LIS(lon_range,lat_range,dates,variables,path,dx,dy,rsmpl):
     out_reproj = outt.assign_coords({'longitude':outt['lon'][0,:],'latitude':outt['lat'][:,0]})
     out_reproj = out_reproj.rename({'x':'longitude','y':'latitude'})
     out_reproj = out_reproj.rio.write_crs(4326)
-    out_reproj = out_reproj.drop_vars(['lat','lon'])
     
     return out_reproj
 
